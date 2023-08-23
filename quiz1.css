@@ -1,0 +1,40 @@
+#other-list {
+    
+    list-style-type: none; 
+    padding: 14px 14px 10px 40px;
+    font-size: 20px;
+  }
+
+#other-list li:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+#other-list li:nth-child(even){
+    background-color: #eee;
+}
+  
+  #new-list{
+    
+    list-style-type: none; 
+    padding: 14px 14px 10px 40px;
+    font-size: 20px;
+  }
+  
+#new-list li:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+#new-list li:nth-child(even){
+    background-color: #eee;
+}
+
+#box{
+    position: relative;
+    top: 30px;
+    left: -99px;
+}
+#add{
+    position: relative;
+    top: 30px;
+    left: -99px;
+}

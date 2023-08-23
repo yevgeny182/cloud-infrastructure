@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="quiz1.css">
+        <h2>
+            1. To Do List
+            <ul>
+                <li> Pay bills </li>
+                <li> Read a Book</li>
+                <li> Meet Anna </li>
+                <li> Wash Dishes  </li>
+            </ul>
+        </h2>
+
+      
+
+    </head>
+    <h2>
+        2. To Do List
+        <ul id="other-list" class="number-two">
+            <li> Pay bills </li>
+            <li> Read a Book</li>
+            <li> Meet Anna </li>
+            <li> Wash Dishes  </li>
+        </ul>
+    </h2>
+
+    <h2>
+        3. To Do List
+    <input type="text" placeholder="Enter a task.." id="box">
+    <button id ="add" onclick="addListItem()"> Add </button>
+    <ul id="new-list" class="number-two">
+            <li> Pay bills </li>
+            <li> Read a Book</li>
+            <li> Meet Anna </li>
+            <li> Wash Dishes  </li>
+        </ul>
+    </h2>
+
+    <script> 
+    
+    function addListItem() {
+    	var li = document.createElement('li');
+    	var inputValue = document.getElementById('box').value;
+    	var t = document.createTextNode(inputValue);
+    	li.appendChild(t);
+    	if (inputValue === '') {
+      	alert("You must write something!");
+    	} else {
+      	document.getElementById('new-list').appendChild(li);
+    	}
+    	document.getElementById('box').value = "";
+}
+</script>
+
+</html>
